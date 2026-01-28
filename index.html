@@ -1,0 +1,2326 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rage Against The Machine — Travel Journal</title>
+  <meta name="description" content="Travel journal archive with messages, photos, and videos." />
+
+  <style>
+    :root{
+      --bg:#0b0c10;
+      --card:#12141b;
+      --text:#e8eaf0;
+      --muted:#a8afc3;
+      --border: rgba(255,255,255,.10);
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 14px;
+      --max: 920px;
+    }
+    html,body{height:100%;}
+    body{
+      margin:0;
+      background:linear-gradient(180deg, var(--bg), #0f1220);
+      color:var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      line-height:1.45;
+    }
+    header{
+      padding: 32px 18px 10px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(0,0,0,.25);
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(10px);
+      z-index: 10;
+    }
+    .wrap{max-width: var(--max); margin: 0 auto;}
+    h1{margin:0 0 6px; font-size: 22px; font-weight: 700;}
+    .sub{margin:0; color: var(--muted); font-size: 14px;}
+    .controls{
+      margin-top: 14px;
+      display:flex;
+      gap:10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    input[type="search"]{
+      flex: 1 1 260px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+      outline: none;
+    }
+    .btn{
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+      cursor: pointer;
+    }
+    main{padding: 18px;}
+    .day{
+      margin: 26px 0 14px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-weight: 600;
+      letter-spacing: .2px;
+    }
+
+    .entry{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px;
+      margin: 12px 0;
+      box-shadow: var(--shadow);
+    }
+    .meta{
+      display:flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+    .who{font-weight: 650; color: #d6dbef;}
+    .text{
+        white-space: pre-line;
+        font-size: 15px;
+        margin: 0;
+    }
+
+    figure{margin: 10px 0 0;}
+    figcaption{color: var(--muted); font-size: 12px; margin-top: 6px;}
+    img, video{
+      width: 100%;
+      max-height: 72vh;
+      object-fit: contain;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.03);
+    }
+
+    /* Lightbox */
+    dialog{
+      width: min(1100px, 96vw);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 0;
+      background: rgba(18,20,27,.95);
+      color: var(--text);
+    }
+    dialog::backdrop{background: rgba(0,0,0,.75);}
+    .lb{
+      padding: 14px;
+    }
+    .lb-head{
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .lb-title{color: var(--muted); font-size: 13px;}
+    .close{
+      padding: 8px 10px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+      cursor:pointer;
+    }
+    .hidden{display:none !important;}
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .gallery img{
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Rage Against The Machine</h1>
+      <p class="sub">6 Dec 2025 - 1 Jan 2026</p>
+
+      <div class="controls">
+        <input id="q" type="search" placeholder="Search messages…" aria-label="Search messages" />
+        <button class="btn" id="clear">Clear</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap" id="timeline">
+    <!--Begin -->
+    <!-- ===== Example Day Section ===== -->
+    <div class="day">Day 1 - 7/12/2025</div>
+
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 15:36</div>
+    <div>Al Quds</div>
+      </div>
+        <div class="text">Border control was luckily smooth. I am in and made a new friend already!</div>
+        <figure>
+            <img src="media/1_1.jpeg" loading="lazy">
+        </figure>
+    </article>
+
+
+    <!-- Add more <div class="day"> and <article class="entry"> blocks as needed -->
+        
+        <div class="day">Day 2 - 8/12/2025</div>
+
+        <article class="entry" data-text="Day 2 - 8/12/2025">
+          <div class="meta">
+            <div><span class="who">Bis</span> · 09:02</div>
+        <div>Al Quds</div>
+          </div>
+          <div class="text">Jerusalem has become a ghost city when it comes to visitors. Locals support Palestine football team against Syria, pilgrims continue to pray at the Wall, and cats get to enjoy a deserted Al-Aqsa.</div>
+        <div class="gallery">
+            <img src="media/2_1.jpeg" loading="lazy">
+            <img src="media/2_2.jpeg" loading="lazy">
+            <img src="media/2_3.jpeg" loading="lazy">
+        </div>
+        </article>
+        
+        <article class="entry">
+            <div class="meta">
+                  <div><span class="who">Bis</span> · 16:35</div>
+            <div>Al Quds -> Ramallah</div>
+                </div>
+                <div class="text">The Sacred Esplanade, called Al-Aqsa Mosque by Palestinians and Temple Mount by the Jews, holds a special meaning for both Islam and Judaism.
+                It is considered the third holiest place of Islam, as the place from which the prophet Mohammed ascended to heaven. It served as the first "qibla", the direction Muslims turn towards when praying. The Dome of the Rock, the blue Mosque in the pictures from this morning, was completed in 692 CE, making it one of the oldest existing Islamic structures in the world.
+                The esplanade is the holiest site for Judaism. It is the location where the First and Second Temples once stood, and where the Third and final Temple should be built when the Messiah will arrive. It hosts the Foundation Stone, from which the world was created and expanded into its current form. It is believed to host the Ark of the Covenant, and the place on which the Binding of Isaac took place.
+                Due to its sanctity, access to the esplanade sparked controversy for ages. The rules that dictate the sovereignty over the esplanade - called the Status Quo - are differently understood by Muslims (and international law) and Israeli [1].
+                In any case, on the ground the situation is characterized by Israeli occupation forces controlling all accesses. 
+                Now, the most respected Jew authorities forbid Jews from entering the site, to avoid unintentionally entering the area where the Holy of Holies stood, since, according to rabbinical law, there is still some aspect of the divine presence at the site. Such a ban is also part of the Status Quo and was part of Israeli law until 2018, when it was unilaterally lifted.
+                Since then, religious Zionists (often led by the international criminal and Israeli Minister of National Security Ben Gvir) entered the site to  pray loads of times, sparking outrage that resulted in war multiple times.
+                In the video, a glimpse of religious Zionists exiting the esplanade after chanting inside in provocation, and in spite of any understanding of the Status Quo.
+                [1] https://www.google.com/amp/s/www.aljazeera.com/amp/news/2023/4/11/hldwhat-does-the-status-quo-mean-at-jerusalems-al-aqsa-mosque</div>
+                <figure>
+                    <video controls preload="metadata">
+                      <source src="media/v2_1.mp4" type="video/mp4">
+                    </video>
+                </figure>
+                  
+        </article>
+        
+        <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 16:42</div>
+          <div>Al Quds -> Ramallah </div>
+            </div>
+            <div class="text"></div>Expect long messages since I am completely stuck in the traffic since one hour and have some things to note down.
+        </div>
+        </article>
+          
+        <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 17:01</div>
+          <div>Al Quds -> Ramallah</div>
+            </div>
+            <div class="text">Warning about this Journal.
+                I'll use this Journal not only to document what I see but also to note down my thoughts and impressions. 
+                I expect to come back with more questions than answers, and what I will write here "live" might reflect my extreme ignorance on many topics, and might turn out to be false or politically "incorrect" after second consideration.
+                To access proper, professional information about the situation in Palestine, you can refer to sources such as Eye on Palestine, Al Jazeera, Middle East Eye among others.
+                To follow scrutinized updates specifically about our work here refer instead to the website and social media of the International Solidarity Movement.
+                Take this Journal for what it is: my way of keeping in touch with friends and camarades back home, sharing my impressions while they are fresh.
+                Apologies in advance for mistakes and blunders!
+                </div>
+        </article>
+        
+        <article class="entry" >
+            <div class="meta">
+              <div><span class="who">Bis</span> · 22:19</div>
+          <div>Ramallah</div>
+            </div>
+            <div class="text">During online training, I was asked this question: what are the ties of your country to settler-colonialism?
+                One obvious answer lies in this picture: crosses marked on the halls of the Church of the Holy Sepulchre by Crusaders in the Middle Ages.
+                Here in Palestine, so much now as during the Crusades, History is weaponized to claim the legitimacy of the power of States over the land. Looking at these crosses made me wonder. If History is the source of State legitimacy, which History should prevail? Is it the Canaanites', who fortified Jerusalem in 1700 BCE? Or the Egyptians', who conquered it later? Then came king David, the Babylonians, Persians, Greeks, Romans, Byzantines, Arabs, Crusaders, Ottomans, British, Palestinians, Jordanians, Israeli.
+                The question is more general. Maybe sovereignty over a land should be allotted to the first State that governed it.. But humans lived Stateless for the vast, vast majority of their history [1], and such definition limits the rights of Peoples who adopted nomadic lifestyles never making any claim to any territory.
+                If rule should be given to the State that is recognized by the majority of people living on a territory, then it can be legitimately gained through force and ethnic cleansing, as in the case of the US which Zionists are trying to replicate.
+                Maybe the States we call "legitimate" are those whose violent upbringing dates back enough for people not to care anymore. If you know the answer, please let me know.. It probably exists somewhere in international law.
+                A question remains: what to do, when confronted with States who claim a right to violence over a territory, and use it to oppress a people inhabiting it? 
+                Maybe the answer is consistently siding with the oppressed, shifting sides when the balance of power changes, to provide a dynamical counterbalance to the excesses of those in charge.
+                If that's correct as it sounds to me now, international solidarity is key.
+                With these thoughts, Day 2 and the Jerusalem parenthesis are closed. Good night!
+                [1] The Dawn of Everything - D. Graeber and D. Wengrow
+                </div>
+                <div class="gallery">
+                    <img src="media/2_4.jpeg" loading="lazy">
+                    <img src="media/2_5.jpeg" loading="lazy">
+                </div>
+      
+        </article>
+      
+        <div class="day">Day 3 - 9/12/2025</div>
+        
+        <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 17:57</div>
+          <div>Ramallah</div>
+            </div>
+            <div class="text">First full day of training today. Updates from the ground and preparation to scenarios. Need to improve quite a bit on tech security: I am setting up self-deleting messages for this chat so take screenshots if you'd like to keep them!</div>
+            <div class="gallery">
+                <img src="media/3_1.jpeg" loading="lazy">
+                <img src="media/3_2.jpeg" loading="lazy">
+            </div>
+        </article>
+        
+        <div class="day">Day 4 - 10/12/2025</div>
+        
+        <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 19:37</div>
+          <div>Ramallah</div>
+            </div>
+            <div class="text">Second and final day of training. End of the Ramallah parenthesis.
+                Moving to location tomorrow 🤞</div>
+            <div class="gallery">
+                <img src="media/4_1.jpeg" loading="lazy">
+                <img src="media/4_2.jpeg" loading="lazy">
+                <img src="media/4_3.jpeg" loading="lazy">
+            </div>
+        </article>
+        
+        <div class="day">Day 5 - 11/12/2025</div>
+        
+        <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 19:19</div>
+          <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">I am currently located at the Abu Hamman's family in a valley few kms away from the Al-Mughayyr village east of Ramallah. 
+                This bedouin family has a history of displacement from various parts of Palestine due to continuous settler violence in some cases and the army declaring their land closed military zone to then stealing it. 
+                They eventually moved here and they are now the last family holding on to the valley after all the other families left due to repeated episodes of combined military+settler violence (which work combined much more than the media would have us believe). 
+                The situation has been escalating since Trump's first term and associated de facto green flags to further annexation of the West Bank, reached a daily frequency of harassments since May 2025, and spiked in the last month, with part of the family currently in administrative detention (Israeli term that translates in abduction without charge lasting from six months to decades)
+                
+                Last Saturday eight masked settlers armed with clubs dropped off during the night from a settler security van (kind of settler military still with authority to detain you) and stormed the family tents, injuring one of the kids at the head, injuries family and internationals
+                https://palsolidarity.org/2025/12/for-immediate-release-israeli-settlers-attack-and-injure-palestinian-family-and-solidarity-activists/
+                
+                Then tonight this happened which would be probably useless to describe given the article published today here
+                https://palsolidarity.org/2025/12/for-immediate-release-us-and-australian-citizens-abducted-by-army-as-attacks-on-palestinians-and-activists-in-al-mughayyer-continue/
+                
+                In all this fucked up situation Fatima, the mother of the family, was due to give birth during the night, and escaped to the top of the hill with the other 5 kids
+                
+                And there are many things that I feel about the resilience of this family and this woman and the situation which I will process in words after some sleep, I would just want to have you think about how biblical the situation is and on the bigotry of our societies that support these abuses. 
+                The area as explained in the article was made closed military area until tonight at 20:30 so we were expecting them to come today and kick everyone out but this did not happen yet, maybe they were saved by the heavy rain
+                
+                Lovely people, smiles and animals despite the horrible night, which really makes you think about the meaning of the term Sumud
+                
+                Share the posts by ISM about this if you can and I hope you also have the chance to meet people like this in better times, when Palestine is free 🇵🇸
+                
+                (and pray for some rain because it stopped and we would like a ton instead 💦)
+                </div>
+            <div class="gallery">
+                <img src="media/5_1.jpeg" loading="lazy">
+                <img src="media/5_2.jpeg" loading="lazy">
+                <img src="media/5_3.jpeg" loading="lazy">
+                <img src="media/5_4.jpeg" loading="lazy">
+                <img src="media/5_5.jpeg" loading="lazy">
+            </div>
+        </article>
+        
+        <div class="day">Day 6 - 12/12/2025</div>
+        
+        <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 13:45</div>
+          <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">Mar7aba, silence and peace today apart from a couple of visits from a settler's drone saying things in Hebrew no one understood.
+
+                Drone visits are much less of a problem with respect to yesterday since the closed military zone order expired at 20:30 and it's not "illegal" anymore for us to be here.
+                 
+                Just waiting and all hoping to have a very boring day, spent in the presence of the absence.
+                </div>
+            <div class="gallery">
+                <img src="media/6_1.jpeg" loading="lazy">
+                <img src="media/6_2.jpeg" loading="lazy">
+            </div>
+        </article>
+        
+        <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 13:48</div>
+          <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+              <div class="text">Never speak too soon XD</div>
+              <figure>
+                  <img src="media/6_3.jpeg" loading="lazy">
+              </figure>
+        </article>
+        
+        <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 14:19</div>
+          <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+              <div class="text">Fuck them</div>
+        </article>
+        
+        <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 14:24</div>
+          <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+              <div class="text">Safe but two camarades arrested</div>
+        </article>
+        
+        <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 15:33</div>
+          <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+              <div class="text">Seems that the familiy is deciding to leave</div>
+        </article>
+        
+        <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 16:40</div>
+          <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">
+                After that, Fatima asked us to go back [to the house] and served us an amazing meal 
+            </div>
+            <figure>
+                <video controls preload="metadata">
+                  <source src="media/v6_1.mp4" type="video/mp4">
+                </video>
+            </figure>
+            
+            <article class="entry">
+                <div class="meta">
+                  <div><span class="who">Bis</span> · 16:40</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+                </div>
+                <div class="text">It’s humbling and infuriating to witness these moments
+                    </div>
+                <div class="gallery">
+                    <img src="media/6_4.jpeg" loading="lazy">
+                    <img src="media/6_5.jpeg" loading="lazy">
+                </div>
+            </article>
+            
+            <article class="entry">
+                <div class="meta">
+                  <div><span class="who">Bis</span> · 17:07</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+                </div>
+                  <div class="text">Rage is sacred in the face of injustice.</div>
+            </article>  
+            
+            <article class="entry">
+                <div class="meta">
+                  <div><span class="who">Bis</span> · 22:01</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+                </div>
+                <div class="text">If there is support from the internationals, the family eventually decided to stay. Hence we are staying as well. 
+
+                    I am currently sleeping with three camarades in a sheep shed just outside the Closed Military Zone (CMZ) because we were identified by the military today which means we cannot play the dumb card if they come back, but we can be back in 15 minutes in case of settlers attack. 
+                    
+                    Since there are not enough people for us to leave completely, we'll be back at the family tomorrow at 6 am and take turns from there on. 
+                
+                    The idea is to escape if the army is coming, which the family is not too afraid of, but to stay if there is a settler attack, hoping our presence will limit violence (inshallah).
+                    
+                    This means you can imagine me safe for the night. 
+                    
+                    In the pictures: twilight over the valley, a flare launched by the army over the Al-Mughayyr village to intimidate the inhabitants, view of the village from where I am sleeping, the sounds of the night.
+                    </div>
+                <div class="gallery">
+                    <img src="media/6_6.jpeg" loading="lazy">
+                    <img src="media/6_7.jpeg" loading="lazy">
+                    <img src="media/6_8.jpeg" loading="lazy">
+                    <video controls preload="metadata">
+                        <source src="media/v6_2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </article>
+            
+            <article class="entry">
+                <div class="meta">
+                  <div><span class="who">Bis</span> · 22:10</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+                </div>
+                  <div class="text">In barely two days I gained a completely new understanding of the sentence to exist is to resist.
+                    I always thought about it as an invitation to resist as the way to fully exist.
+                    Now, looking at Fatima refusing to leave her home made CMZ for one month, I found a deeper meaning to it.
+                    Here in occupied Palestine, the simple act of existing is the most widespread way of resisting the occupation.
+                    Every meal she insists in preparing is a blow against the Zionist Machine.
+                    </div>
+                  <figure>
+                      <img src="media/6_9.jpeg" loading="lazy">
+                  </figure>
+            </article>
+            
+            <article class="entry">
+                <div class="meta">
+                  <div><span class="who">Bis</span> · 22:19</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+                </div>
+                  <div class="text">Last thing, the two camarades that were arrested decided to resist deportation, which means they are refusing to sign the papers that would put them in a plane to be deported ASAP. 
+                    This strategy is a strategy that works only if there is a strong media team behind the arrested activists, able to use their detention as a way to bring attention to the situation that brought to their arrest.
+                    Since I have quite a few days still before needing to go back to work, in case of arrest I might decide to follow the same path, if things do not get too scary.
+                    This will make sense just if you guys have my back. Someone will inform you in case this happens.
+                    Good night and free Palestine 🇵🇸
+                    </div>
+            </article>
+                    
+                    
+                    <div class="day">Day 7 - 13/12/2025</div>
+                    
+                    <article class="entry">
+                        <div class="meta">
+                          <div><span class="who">Bis</span> · 6:04</div>
+                      <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+                        </div>
+                          <div class="text">Changing the settings of the group so that everyone can add people if you like (I was accepting all requests anyway)
+
+                        </div>
+            </article>
+                    
+                        
+                    <article class="entry">
+                        <div class="meta">
+                          <div><span class="who">Bis</span> · 7:21</div>
+                      <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+                        </div>
+                          <div class="text">Back to the sheep shed as settlers saw us so the military now knows internationals decided to stay despite the CMZ. Two Israeli camarades and one international still with the family though.
+
+                    </div>
+            </article>
+                    
+                    
+                    <article class="entry">
+                        <div class="meta">
+                          <div><span class="who">Bis</span> · 7:21</div>
+                      <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+                        </div>
+                          <div class="text">Just in time, army coming, I am outside the area.
+                    </div>
+            </article>
+                    
+                    <article class="entry">
+                        <div class="meta">
+                          <div><span class="who">Bis</span> · 7:21</div>
+                      <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+                        </div>
+                          <div class="text"> The internationals and Israeli managed to get out of the CMZ before arrest, see them chilling down the street.
+                    </div>
+                    <figure>
+                        <img src="media/7_1.jpeg" loading="lazy">
+                    </figure>
+                  
+            </article> 
+
+            
+            
+            <article class="entry">
+                <div class="meta">
+                      <div><span class="who">Bis</span> · 8:13</div>
+                <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+                    </div>
+                    <div class="text">🐑🐏🐑🐑🐑🐏🐏</div> 
+                    <figure>
+                        <video controls preload="metadata">
+                          <source src="media/v7_1.mp4" type="video/mp4">
+                        </video>
+                    </figure>
+                      
+            </article>
+            
+            <article class="entry">
+                <div class="meta">
+                      <div><span class="who">Bis</span> · 10:00</div>
+                <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+                    </div>
+                    <div class="text"> ISM bulletin about yesterday 
+                        https://palsolidarity.org/2025/12/for-immediate-release-attempts-to-displace-the-abu-hamam-family-continue-two-us-solidarity-activists-arrested/
+                        </div> 
+            </article>
+            
+            <article class="entry">
+                <div class="meta">
+                      <div><span class="who">Bis</span> · 11:19</div>
+                <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+                    </div>
+                    <div class="text">These kids need some serious healing and some classes in Italian football defense. The Zionists need to let the kids be kids. </div> 
+                    <figure>
+                        <video controls preload="metadata">
+                          <source src="media/v7_2.mp4" type="video/mp4">
+                        </video>
+                    </figure>
+                      
+            </article>
+            
+            <article class="entry">
+                <div class="meta">
+                      <div><span class="who">Bis</span> · 15:00</div>
+                <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+                    </div>
+                    <div class="text">Still staying outside the CMZ.</div>                       
+            </article>
+            
+            <article class="entry">
+                <div class="meta">
+                      <div><span class="who">Bis</span> · 15:33</div>
+                <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+                    </div>
+                    <div class="text">Given the escalation of army+settlers harassments, arrests and attacks of the past few days, a call was made to activists in all the West Bank to come and support the family.
+                        Very cool, tonight 4 ISMers and 4 Hebrew speaker activists are coming, which allowed the two of us who have been here the longest to take a full day of break in Ramallah.
+                        It's likely that I'll spend also tonight at the sheep shed, just monitoring the phone in case rapid response is needed. 
+                        This means that with the 3 of us + the others coming, we'll be 11 tonight.
+                        
+                        In the upcoming week we should have continuous support from Hebrew speakers (the so called "non-deportables") which should be able to provide solidarity presence also during the day without needing to play cat and mouse when the army comes.
+                        </div>                       
+            </article>
+            
+            <article class="entry">
+                <div class="meta">
+                  <div><span class="who">Bis</span> · 18:33</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+                </div>
+                  <div class="text"> Dinner in the CMZ.
+            </div>
+            <figure>
+                <img src="media/7_2.jpeg" loading="lazy">
+            </figure>
+          
+             </article> 
+             
+            <article class="entry">
+                <div class="meta">
+                      <div><span class="who">Bis</span> · 15:00</div>
+                <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+                    </div>
+                    <div class="text">I’ll be outside the CMZ for tonight.
+                    </div>                       
+            </article>
+            
+            <div class="day">Day 8 - 14/12/2025</div>
+            
+            <article class="entry">
+                <div class="meta">
+                  <div><span class="who">Bis</span> · 09:05</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+                </div>
+                <div class="text">The night was calm for everyone here alhamdulillah. I'll spend the day in solidarity with the family.
+                    </div>
+                <div class="gallery">
+                    <img src="media/8_1.jpeg" loading="lazy">
+                    <img src="media/8_2.jpeg" loading="lazy">
+                    <img src="media/8_3.jpeg" loading="lazy">
+                    <img src="media/8_4.jpeg" loading="lazy">
+                    <video controls preload="metadata">
+                        <source src="media/v8_1.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </article>
+            
+            <article class="entry">
+                <div class="meta">
+                  <div><span class="who">Bis</span> · 09:38</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+                </div>
+                <div class="text">After second thought, if someone else wants to join the group, tell them to message me directly saying who they are and that they would like to be added.
+                    </div>
+            </article>
+            
+            <article class="entry">
+                <div class="meta">
+                  <div><span class="who">Bis</span> · 13:37</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+                </div>
+                <div class="text"> Big meal, close escape, now at the sheep shed, hurt my ankle, we'll see where to next.
+
+                    </div>
+                <div class="gallery">
+                    <img src="media/8_5.jpeg" loading="lazy">
+                    <img src="media/8_6.jpeg" loading="lazy">
+                    <img src="media/8_7.jpeg" loading="lazy">
+                    <img src="media/8_8.jpeg" loading="lazy">
+                </div>
+            </article>
+            
+            <article class="entry">
+              <div class="meta">
+                <div><span class="who">Bis</span> · 14:05</div>
+            <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+              </div>
+              <div class="text"> Update about the arrested camarades 
+                M and Y update:
+                Both hearings ended with a deportation order. M and Y are ok, currently held either at Givon or still at Ben Gurion, the lawyer is trying to figure out.
+                They will be brought in front of a judge within 72 hours starting from yesterday at about midnight. If the hearing doesn't end with their release, the lawyer is willing to file an appeal, since their detention is unlawful.
+                
+                The detention is unlawful because turns out that the CMZ order does not really include Abu Hamman's house. Ironically, it includes the settlers' outpost. Obviously, Zionists are not good at following even their own rules so this does not really make a difference on the ground.</div>
+
+              </article>
+              
+              <article class="entry">
+                <div class="meta">
+                  <div><span class="who">Bis</span> · 19:33</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+                </div>
+                <div class="text"> Going to the hospital to have the ankle checked.
+                </div>
+  
+            </article>
+            
+            <article class="entry">
+              <div class="meta">
+                <div><span class="who">Bis</span> · 19:34</div>
+            <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+              </div>
+              <div class="text"> All injury related to the occupation is treated for free in Palestine 🇵🇸
+              </div>
+
+          </article>
+          
+          <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 19:54</div>
+          <div>Al-Mughayyr -> Ramallah</div>
+            </div>
+            <div class="text"> Very sad to leave the family and team behind with all this danger, may they have an uneventful night.
+            </div>
+        </article>
+        
+        <article class="entry">
+          <div class="meta">
+            <div><span class="who">Bis</span> · 20:13</div>
+        <div>Ramallah hospital</div>
+          </div>
+          <div class="text"> And please machine tell me what I want to hear
+
+          </div>
+      </article>
+      
+      <article class="entry">
+        <div class="meta">
+          <div><span class="who">Bis</span> · 20:23</div>
+      <div>Ramallah hospital</div>
+        </div>
+        <div class="text"> Not broken!
+        </div>
+        <figure>
+          <img src="media/8_9.jpg" loading="lazy">
+      </figure>
+        
+    </article>
+         
+    <div class="day">Day 9 - 15/12/2025</div>
+    
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 12:07</div>
+    <div>Ramallah -> Nablus</div>
+      </div>
+      <div class="text">  No events at Abu Hammam's today. Inshallah it will keep being quiet. I am heading to Nablus for a pause, I have to rest the foot anyway.
+    </article>
+    
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 14:15</div>
+    <div>Ramallah -> Nablus</div>
+      </div>
+      <div class="text"> Hundreds of Israeli flags by the street - they'll be all burning on Liberation Day 🇵🇸
+      </div>
+      <figure>
+        <img src="media/9_1.jpeg" loading="lazy">
+    </figure>
+      
+  </article>
+    
+  <article class="entry">
+    <div class="meta">
+          <div><span class="who">Bis</span> · 14:17</div>
+    <div> Ramallah -> Nablus</div>
+        </div>
+        <figure>
+            <video controls preload="metadata">
+              <source src="media/v9_1.mp4" type="video/mp4">
+            </video>
+        </figure>
+          
+</article>
+
+<article class="entry">
+  <div class="meta">
+        <div><span class="who">Bis</span> · 16:40</div>
+  <div> Nablus</div>
+      </div>
+      <div class="text"> Beginning of the Nablus parenthesis.
+      
+      </div>
+      <figure>
+          <video controls preload="metadata">
+            <source src="media/v9_2.mp4" type="video/mp4">
+          </video>
+      </figure>
+        
+</article>
+
+<article class="entry">
+  <div class="meta">
+        <div><span class="who">Bis</span> · 16:40</div>
+  <div> Nablus</div>
+      </div>
+      <div class="text"> Day 9 I guess? Feels like a lifetime.
+      
+      </div>
+      <figure>
+          <video controls preload="metadata">
+            <source src="media/v9_3.mp4" type="video/mp4">
+          </video>
+      </figure>
+        
+</article>
+
+<article class="entry">
+  <div class="meta">
+        <div><span class="who">Bis</span> · 19:34</div>
+  <div> Nablus</div>
+      </div>
+      <div class="text">ttps://palsolidarity.org/2025/12/us-activists-imprisoned-by-israel-while-challenging-deportation/
+      More about the arrested camarades
+      </div>
+        
+</article>
+
+<article class="entry">
+  <div class="meta">
+        <div><span class="who">Bis</span> · 19:40</div>
+  <div> Nablus</div>
+      </div>
+      <div class="text">https://palsolidarity.org/2025/12/call-to-action-write-to-the-us-embassy-in-jerusalem-to-demand-they-attend-the-review-hearing-of-illegally-detained-us-citizens/
+
+       And here a call to action to you folks. Please copy this email and send it to the US embassy in Jerusalem to pressure diplomats into attending the process of Irene and Trudi and bring more and more attention to this story.
+      </div>
+        
+</article>
+
+<article class="entry">
+  <div class="meta">
+    <div><span class="who">Bis</span> · 20:20</div>
+<div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+  </div>
+  <div class="text"> I just treated myself with a  full session in the original Turkish Bath in the old city of Nablus (operational since 1736, damaged during the 2002 Israeli invasion of Nablus, restored into 2004).
+  While enjoying days of completely relaxed recovery from a minor injury, Irene and Trudi are in prison. It surely is a heinous place (and Gavon is infamous for its harsh conditions), but they could get out in any moment by accepting the deportation order, if they wanted to.
+  This makes me think about the deep difference between visiting a trauma - as we are doing - and living it - as for Fatima and the kids. 
+  The Zionist machine has no place for them. They'll get no rest, they'll have no alternative solution, they'll have no peace until Palestine is free.
+  May Liberation Day arrive within their lifetimes 🇵🇸
+  
+  </div>
+  <div class="gallery">
+      <img src="media/9_2.jpeg" loading="lazy">
+      <img src="media/9_3.jpeg" loading="lazy">
+      <img src="media/9_4.jpeg" loading="lazy">
+  </div>
+</article>
+
+<div class="day">Day 10 - 16/12/2025</div>
+
+<article class="entry">
+  <div class="meta">
+    <div><span class="who">Bis</span> · 7:15</div>
+    <div>Nablus</div>
+  </div>
+  <div class="text">Still no news from Abu hamman al-ahmdulillah. No news is best news.
+
+    I am going to the An-Najah University here in Nablus to show the students some slides about particle physics.
+    
+    Foot still a bit purple.</div>
+</article>
+
+<article class="entry">
+  <div class="meta">
+    <div><span class="who">Bis</span> · 11:10</div>
+    <div>Nablus</div>
+  </div>
+  <div class="text">Update on the arrested camarades 
+    Hearing just ended. A response will be given later today. The judge said he will ask immigration why they refused to look at the maps during the previous hearing. The lawyer is hopeful they'll be released at least until the appeal hearing.
+    Irene and Trudi are ok, this prison is way better than the previous one. They are together in a cell by themselves. They should have access to the commissary and phone after today</div>
+</article>
+
+<article class="entry">
+  <div class="meta">
+    <div><span class="who">Bis</span> · 11:31</div>
+    <div>Nablus -> Ramallah</div>
+  </div>
+  <div class="text">Nablus is a beautiful city and historically the beating heart of the resistance. It is now a city under extreme military and settlers pressure and whose economy has collapsed. Just said goodbye to the Professor who invited me here, after he drove me around to explain so many struggles. Heading back to Ramallah now, eventually I'll tell something more about what I learned here. </div>
+  <div class="gallery">
+    <img src="media/10_1.jpeg" loading="lazy">
+    <img src="media/10_2.jpeg" loading="lazy">
+    <img src="media/10_3.jpeg" loading="lazy">
+    <img src="media/10_4.jpeg" loading="lazy">
+    <img src="media/10_5.jpeg" loading="lazy">
+    <img src="media/10_6.jpeg" loading="lazy">
+    <img src="media/10_7.jpeg" loading="lazy">
+  </div>
+</article>
+    
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 12:31</div>
+        <div>Nablus -> Ramallah</div>
+      </div>
+      <div class="text">Greetings and solidarity to the Al-Mughayyr community by students and professors of the An-Najah University in Nablus.
+        Life is strange.
+        </div>
+    </article>
+
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 15:09</div>
+        <div>Ramallah</div>
+      </div>
+      <div class="text">Update about the arrested camarades 
+        
+        From the lawyer:
+        Appeals court gave a decision acknowledging the urgency, and determined the state's response would be filed by 19:00 today
+        
+        It doesn't indicate anything re the final outcome, but it's a good sig.n
+        
+        In the meanwhile, interviews happening in Abu Hammam.
+        </div>
+      <figure>
+        <img src="media/10_8.jpeg" loading="lazy">
+      </figure>
+    </article>
+    
+    <div class="day">Day 11 - 17/12/2025</div>
+
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 9:21</div>
+        <div>Ramallah</div>
+      </div>
+      <div class="text">Good morning, no news from Abu Hamman's. Whatever the reason of these days of calm (be it the media attention brought to the place by the night attack of last Saturday, or the ongoing trial to the arrested camarades or who knows what), having a few nights of good sleep is a blessing for the family. 
+        Good sleep is very rare for Palestinians experiencing abuses, and part of our solidarity is doing the night watches for them so that they can get some rest.
+        I'll spend the day in Ramallah and help with media work from here.
+        </div>
+    </article>
+    
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 9:21</div>
+        <div>Ramallah</div>
+      </div>
+      <div class="text">There have been a lot of settlers activity in Abu Hammam (AH) today and the Hebrew speakers cancelled for tonight, therefore I am going back to support.
+        I will not be in the same place as the past days but at another family 10 minutes away.
+        From there it is possible to monitor who is approaching Abu hamman and warn the camarades down there.
+        A support role that proved  crucial for me in the past days. The new place is called Abu Najjeh (AN)
+        By going to AN, I will allow someone currently there to go down to AH tonight.
+        
+        Yalla
+        </div>
+    </article>
+
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 18:41</div>
+        <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+      </div>
+      <div class="text">On site.</div>
+      <figure>
+        <img src="media/11_1.jpeg" loading="lazy">
+      </figure>
+    </article>
+
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 19:25</div>
+        <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+      </div>
+      <div class="text"></div> They are already kicking my ass at Seega
+      <figure>
+        <img src="media/11_2.jpeg" loading="lazy">
+      </figure>
+    </article>
+    
+    <div class="day">Day 12 - 18/12/2025</div>
+
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 3:46</div>
+        <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+      </div>
+      <div class="text">Starry night watch</div>
+      <div class="gallery">
+        <img src="media/12_1.jpeg" loading="lazy">
+        <video controls preload="metadata">
+          <source src="media/v12_1.mp4" type="video/mp4">
+        </video>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 6:00</div>
+        <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+      </div>
+      <div class="text">Nothing happened</div>
+    </article>
+    
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 10:15</div>
+        <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+      </div>
+      <div class="text">Us in AN watching settler watching camarades hidden in AH.</div>
+      <figure>
+        <img src="media/12_2.jpeg" loading="lazy">
+      </figure>
+    </article>
+    
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 10:48</div>
+        <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+      </div>
+      <figure>
+        <video controls preload="metadata">
+          <source src="media/v12_2.mp4" type="video/mp4">
+        </video>
+      </figure>
+    </article>
+
+ 
+
+
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 11:20</div>
+        <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+      </div>
+      <div class="text">In yellow the CMZ, I am currently in Abu Najh, you can see Abu Hammam. The red hill is where usually settlers and army arrive at Abu Hammam's, we can see the road they pass by very clearly from AN, as you can see in the previous video. In purple the valley where I hurt the foot while escaping, leading to Al-Mughayyr.
+      </div>
+      <figure>
+        <img src="media/12_3.jpeg" loading="lazy">
+      </figure>
+    </article>
+
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 12:11</div>
+        <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+      </div>
+      <div class="text">Settlers on an ATV showing up at AN and AH and leaving as a psychological tactic.
+      </div>
+      <figure>
+        <img src="media/12_4.jpeg" loading="lazy">
+      </figure>
+    </article>
+
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 13:05</div>
+        <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+      </div>
+      <div class="text">Hide and seek under occupation</div>
+      <div class="gallery">
+        <img src="media/12_5.jpeg" loading="lazy">
+        <img src="media/12_6.jpeg" loading="lazy">
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 13:07</div>
+        <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+      </div>
+      <div class="text"></div> 100 meters away settler acting like he owns the place.
+      <figure>
+        <video controls preload="metadata">
+          <source src="media/v12_3.mp4" type="video/mp4">
+        </video>
+      </figure>
+    </article>
+
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 15:17</div>
+        <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+      </div>
+      <div class="text"></div> Update on the arrested camarades:
+      Our appeals were denied. Irene and Trudi received a visit by the lawyer in the morning and decided to try and file another appeal to the Tel Aviv district court, on which the lawyer is working at the moment. They have a deportation flight scheduled for tonight at 00.45, hopefully the appeal will be received in time for them not to be forcibly expelled.
+      
+    </article>
+
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 15:59</div>
+        <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+      </div>
+      <div class="text">Abu Najjeh family was displaced multiple times in the past 80 years.
+        They now invested heavily on this place. Differently from Abu Hammam's the other side of the road, we are in zone B here - meaning the Israeli control is theoretically less deep, civil administration being Palestinian.
+        Given the proximity of the outpost, if Abu Hammam's leave, Abu Najjeh will be the next main target.</div>
+        <figure>
+          <video controls preload="metadata">
+            <source src="media/v12_4.mp4" type="video/mp4">
+          </video>
+        </figure>
+    </article>
+
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 16:02</div>
+        <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+      </div>
+      <div class="text">Those ruins are what remains of the looted houses of another family who decided to leave last month due to settlers' violence.
+      </div>
+      <figure>
+        <img src="media/12_7.jpeg" loading="lazy">
+      </figure>
+    </article>
+
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 16:04</div>
+        <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+      </div>
+      <div class="text"></div>I'd like to play with them but you know, wiser going study some Arabic while watching the road
+      <figure>
+        <img src="media/12_8.jpeg" loading="lazy">
+      </figure>
+    </article>
+
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 18:06</div>
+        <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+      </div>
+      <div class="text">Seems our arrested friends are currently being forcibly deported.</div>
+    </article>
+    
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 18:06</div>
+        <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+      </div>
+      <div class="text">FOR IMMEDIATE RELEASE: US Citizens to Continue Challenging Deportation as Appeals Summarily Dismissed while Settlers Continue Harassing Abu Hamam Family.
+      
+        18 December 2025 
+        New York-based Irene Cho and Boston-based Trudi Frost will continue challenging a deportation order while they are held in custody at Givon prison after an appeal tribunal summarily denied their appeal. 
+        Cho and Frost were arrested on Friday, December 12, in the West Bank village of al-Mughayyer while staying with a family threatened with forced displacement. Their staying permits were revoked on the night of December 13 through a summary procedure, with officials refusing to review evidence of the illegality of the arrest. 
+        The appeal court that refused the appeal on December 17 stated they don't have the jurisdiction to review the military area order which was served on the day of the arrest. This is legally incorrect. The lawyer commented this was an "absurd" decision. On December 16, a custudy review panel decided not to release them ignoring that the orders were wrong in the first place. The legal team will file a petition to the Tel Aviv district Court to appeal both this decision and the decision to keep them in custody, as they challenge the legality of deportation order.
+        The US Embassy visited Cho and Frost yesterday, December 17, after they have been in custody for five days, but has refused to be present at the hearings. Cho and Frost local representatives are aware of the situation.
+        Irene Cho stated: "I have been arrested and facing deportation for refusing to leave a nine months pregnant Palestinian woman alone with 15+ armed Israeli military and police personnel. I believe that the Palestinian people have an undeniable right to live on their own land. This is one of the highest stage of struggle for land and I reject the Israel colonial project's attempt to steal the land of a family that has been living here for generations." 
+        Cho and Frost were arrested at the al-Khalayel area of al-Mughayyer, north-east of Ramallah, while standing in solidarity against the forced displacement of the Abu Hamam family. The arrest took place after Israeli forces claimed to present a month-long military order sealing the area. The area marked as off limits in the map accompanying the order, however, did not include the Abu Hamam residence – making their detention unlawful (see images below). In contrast, the closed area does include the outpost form which Israeli settlers regularly set out to terrorize the family. Despite that fact, Israeli forces did not take any steps to enforce the order against the settlers, who continue to harass and assault the family undisturbed, often with the cooperation official Israeli armed forces.
+        In a statement prior to her arrest, Frost said she was motivated to volunteer with ISM because “the ethnic cleansing happening in Palestine goes against international law and against humanity.” 
+        Frost and Cho were held illegally on Saturday, December 13, as their detention prior to being brought before an immigration officer extended for several hours beyond the legal limit of 24 hours. During the hearing, the officer refused to examine at the maps accompanying the order, and which prove their detention was arbitrary and without cause, as well as politically motivated. In further infringement of due process, Israeli authorities prevent the lawyer representing the two from attending the interview for several hours, before conceding it is their legal right to have legal representation. 
+        Following their illegal detention, the two were questioned for obstructing a police officer and of being in violation of lawful direction. They were then transferred to the Neve Tirza maximum security prison before being moved to Ben Gurion for a deportation interview.
+        The Abu Hamam family has been the target of ceaseless harassment and assault at the hands of Israeli settlers and armed forces for over a year in an attempt to drive them away from their lands. Over the past week these attempts have escalated drastically, with near daily attacks.
+        Last Sunday, December 7, 2025, a settler attack on the family took place in coordination with a military raid on the village, which prevented residents and medics to come to the family’s help. The attack resulted in the injuries of the family’s matriarch, 59-year-old Fadda Abu Naim, 13-year-old Riziq Abu Naim, as well as two UK nationals, a Colombian-American and a French national. On the following day, Monday December 8, settlers dismantled Palestinian owned corrugated metal sheds under the protection of the military. On Wednesday, December 10, a military force raided the family’s property, presenting a 24-hour military zone order, and arrested a US and an Australian national who were later released. Friday saw the unlawful arrest of Cho and Frost, while several military raids took place on Saturday and Sunday, as the forces looked for solidarity activists. Meanwhile, settlers are allowed to roam the area, attacking and harassing Palestinian communities completely undisturbed.
+        These attacks by settlers and soldiers are intended to forcibly displace the Abu Hamam family from their land as part of the implementation of the Israeli policy of ethnicly cleansing Palestinians. In this case, displacing the family will also allow Israel to create a line of settlements and settlement outposts all the way from the East Ramallah area to the South Nablus area, and from there to the Jordan Valley.</div>
+    </article>
+    
+  <div class="day">Day 13 - 19/12/2025</div>
+
+  <article class="entry">
+    <div class="meta">
+      <div><span class="who">Bis</span> · 8:16</div>
+      <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+    </div>
+    <div class="text">Good news: no news</div>
+  </article>
+
+  <article class="entry">
+    <div class="meta">
+      <div><span class="who">Bis</span> · 8:19</div>
+      <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+    </div>
+    <div class="text">Just lambs.</div>
+    <div class="gallery">
+      <img src="media/13_1.jpeg" loading="lazy">
+      <video controls preload="metadata">
+        <source src="media/v13_1.mp4" type="video/mp4">
+      </video>
+    </div>
+  </article>
+  
+  <article class="entry">
+    <div class="meta">
+      <div><span class="who">Bis</span> · 14:11</div>
+      <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+    </div>
+    <div class="text">Final update about the arrested camarades: they are home in the US</div>
+  </article>
+
+  <article class="entry">
+    <div class="meta">
+      <div><span class="who">Bis</span> · 15:29</div>
+      <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+    </div>
+    <div class="text">One of the best decisions I made since coming here is changing the name I go by.
+      I had picked Bisagno (the name of a river and of a famous anti-fascist rebel), but it sounds weird to Arabic speakers so people would tend to forget.
+      I now go by "Bis", which is the sound they make to tell the cats to go away from food (similar to our Italian pspsps?)
+      No matter how many times you tell cats to "Bis away", they are always back in no time 🤣
+      Sounds very fitting for the situation we are in, and now everyone instantly remembers my name 🐈
+      </div>
+  <figure>
+    <img src="media/13_2.jpeg" loading="lazy">
+  </figure>
+  </article>
+  
+  <article class="entry">
+    <div class="meta">
+      <div><span class="who">Bis</span> · 16:21</div>
+      <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+    </div>
+    <div class="text">Now that you are familiar with the story of the arrest of the two US friends, compare it with the arrest of a Palestinian.
+      https://palsolidarity.org/2025/12/court-approves-6-month-administrative-detention-of-palestinian-activist-ayman-ghrayeb/
+      </div>
+  </article>
+
+  <article class="entry">
+    <div class="meta">
+      <div><span class="who">Bis</span> · 16:32</div>
+      <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+    </div>
+    <div class="text">We stay alert, army is raiding the village</div>
+  <figure>
+    <video controls preload="metadata">
+      <source src="media/v13_2.mp4" type="video/mp4">
+    </video>
+  </figure>
+  </article>
+  
+  <article class="entry">
+    <div class="meta">
+      <div><span class="who">Bis</span> · 16:33</div>
+      <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+    </div>
+    <div class="text">I can now add "sheperding" to the work experience section of my CV
+    </div>
+    <figure>
+      <img src="media/13_3.jpeg" loading="lazy">
+    </figure>
+  </article>
+
+  
+ 
+<div class="day">Day 14 - 20/12/2025</div>
+
+<article class="entry">
+  <div class="meta">
+    <div><span class="who">Bis</span> · 08:00</div>
+    <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+  </div>
+  <div class="text">I am getting used to it: all good here</div>
+</article>
+
+<article class="entry">
+  <div class="meta">
+    <div><span class="who">Bis</span> · 10:00</div>
+    <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+  </div>
+  <div class="text"></div> Settlers have come visiting us with a drone and now one is arrogantly grazing his sheeps on Abu Najjeh's olives
+  <div class="gallery">
+    <img src="media/14_1.jpeg" loading="lazy">
+    <img src="media/14_2.jpeg" loading="lazy">
+    <video controls preload="metadata">
+      <source src="media/v14_1.mp4" type="video/mp4">
+    </video>
+  </div>
+</article>
+
+
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 10:40</div>
+        <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+      </div>
+      <div class="text"></div> I might have made a good one. Army ignoring the settler violating the CMZ.
+      <figure>
+        <video controls preload="metadata">
+          <source src="media/v14_2.mp4" type="video/mp4">
+        </video>
+      </figure>
+    </article>
+    
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 10:44</div>
+        <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+      </div>
+      <div class="text"></div> Not that law really exists here. Our friends were deported for violating the CMZ even if they were outside the CMZ 🤷
+      
+    </article>
+    
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 11:03</div>
+        <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+      </div>
+      <div class="text">My friend Majeed here showed me this 💔</div>
+      <div class="gallery">
+        <img src="media/14_3.jpeg" loading="lazy">
+        <video controls preload="metadata">
+          <source src="media/v14_3.mp4" type="video/mp4">
+        </video>
+      </div>
+    </article>
+    
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 11:20</div>
+        <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+      </div>
+      <div class="text">Talking of this, now that they went public with names and pictures I can show you my POV of Yuna and Mara's arrest.</div>
+      <div class="gallery">
+        <video controls preload="metadata">
+          <source src="media/v14_5.mp4" type="video/mp4">
+        </video>
+        <video controls preload="metadata">
+          <source src="media/v14_4.mp4" type="video/mp4">
+        </video>
+      </div>
+    </article>
+    
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 11:58</div>
+        <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+      </div>
+      <div class="text">ALERT: high chances that I will write something wrong/imprecise.
+        
+      About the economical situation in the West Bank.
+      
+      The Prof. in Nablus explained to me some of the dynamics of the ongoing collapse of the economy of the West Bank. 
+      
+      Most of the people are paid by the Palestinian State. Nevertheless, taxes first go to Israel which then redirects them to the Palestinian State. Palestinian taxes have been extensively held by Israel as a form of control and retaliation, causing the current state of affairs where most of the people receive half a salary every two months. This means that most Palestinians hold a huge credit with respect to the Palestinian State (we are talking of ~10.000 USD) which will most likely never be repaid.
+      
+      Tourism is now at the absolute lowest, and few things keep the economy going:
+      
+      1. Trade in land. Land is highly valued for political reasons and many Palestinians, as soon as they have some savings, buy some as a form of resistance (to prevent it from falling into Israeli hands or into hands of people who would sell it to Israeli, as many Arab agencies currently do).
+      
+      2. Palestinians with Israeli citizenship. The minimum salary in Israel corresponds to a stellar salary in Palestine, and these Palestinians often go to the West Bank and pay goods at the price they would pay in Israel as a form of solidarity.
+      
+      3. Palestinians that go working in Israel or in the settlements. One day as a construction worker in a settlement pays like one month as a teacher in Palestine.
+      
+      Illegal settlers presence have a heavy impact on rural economies. Yesterday Mustafa was explaining to me that before the arrival of the settlers in the area 2 years ago, he could graze his sheeps in all the land in the surrounding area (which he owns) and then sell each sheep for ~300 USD. 
+      
+      Now the settlers occupy his lands, and he has to buy the food for the sheeps. The price of growing a sheep this way is approximately ~300 USD, meaning that his net gain is currently 0.
+      Such a situation risks deteriorating relations between neighboring Palestinian shepards and farmers, arguing over the small portions of land left. 
+      Yesterday I witnessed a huge and very heated fight between two Palestinian families, one claiming the other was grazing sheeps on their crops. 
+      Such a friction between shepherds and farmers has been a problem for mankind for millenia when land is too scarce to support all the population.</div>
+    </article>
+    
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 12:02</div>
+        <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+      </div>
+      <div class="text"> On the other side, settlers often have only two options: being homeless in the '48, or receiving funds by Israel to live in the West Bank.
+      </div>
+      
+    </article>
+    
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 12:03</div>
+        <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+      </div>
+      <div class="text"> The settlers are not the real problem. They are a bunch of ignorant unsupervised and lost kids. Palestinians would kick them out today if they were not backed by the Zionist machine. 
+        Zionism is the plague.        
+      </div>
+      
+    </article>
+    
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 12:54</div>
+        <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+      </div>
+      <div class="text">First interaction with the unsupervised kids.</div>
+      <div class="gallery">
+        <video controls preload="metadata">
+          <source src="media/v14_6.mp4" type="video/mp4">
+        </video>
+        <video controls preload="metadata">
+          <source src="media/v14_7.mp4" type="video/mp4">
+        </video>
+      </div>
+    </article>
+    
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 15:12</div>
+        <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+      </div>
+      <div class="text">Second interaction.. what a wasted pair of young humans </div>
+      <div class="gallery">
+        <img src="media/14_4.jpeg" loading="lazy">
+        <img src="media/14_5.jpeg" loading="lazy">
+      </div>
+    </article>
+    
+    <div class="day">Day 15 - 21/12/2025</div>
+
+    <article class="entry">
+      <div class="meta">
+        <div><span class="who">Bis</span> · 18:53</div>
+        <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+      </div>
+      <div class="text">Today was a bad day.
+        
+        First, the settlers kids came in the morning with their ATV to intimidate the Abu Najjeh family. 
+        Second, the settlers violated the CMZ under the eyes of the army without prompting any intervention. 
+        Third, while the army was raiding the village, settlers tried to kidnap Rizek, Fatima's 13 years old kid, that was hiding in the mountains. Luckily, some Shebabs were able to intervene in time and stoned the settlers away.
+        Fourth, settlers came back to graze their sheep basically inside Abu Najjeh's land. We filmed them and they filmed us from very close for about 20 minutes. They then left and let their sheep eat the olives of a Palestinian neighbor. He intervened and scared them away, but they called for back up. Four adult settlers among witch was Moshe, the boss of the settlers here around, came to Abu Najjeh's, accompanied by two military jeeps.
+        
+        We were asked by the family to hide while the military were here, and they eventually left.
+        </div>
+    <figure>
+      <img src="media/14_6.jpeg" loading="lazy">
+    </figure>
+        </article>
+        
+        <article class="entry">
+          <div class="meta">
+            <div><span class="who">Bis</span> · 18:53</div>
+            <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+          </div>
+          <div class="text">This fast escalation from kids to army proves how there's no real separation between the settlers and the Zionist state
+            </div>
+        <div class="gallery">
+          <video controls preload="metadata">
+            <source src="media/v14_8.mp4" type="video/mp4">
+          </video>
+          <video controls preload="metadata">
+            <source src="media/v14_9.mp4" type="video/mp4">
+          </video>
+          <video controls preload="metadata">
+            <source src="media/v14_10.mp4" type="video/mp4">
+          </video>
+        </div>
+            </article>
+            
+            <article class="entry">
+              <div class="meta">
+                <div><span class="who">Bis</span> · 20:33</div>
+                <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+              </div>
+              <div class="text">Btw another international twisted ankle
+                </div>
+            <figure>
+              <img src="media/14_7.jpeg" loading="lazy">
+            </figure>
+                </article>
+                
+        
+        <div class="day">Day 15 - 21/12/2025</div>
+        
+        <article class="entry">
+          <div class="meta">
+            <div><span class="who">Bis</span> · 8:15</div>
+            <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+          </div>
+          <div class="text">No news tonight.</div>
+          <figure>
+            <img src="media/15_1.jpeg" loading="lazy">
+          </figure>
+        </article>
+
+        <article class="entry">
+          <div class="meta">
+            <div><span class="who">Bis</span> · 13:01</div>
+            <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+          </div>
+          <div class="text">Hectic moments for the camarades in Abu Hammam's. 5 military and police settlers went to them. We were able to warn them in time so the camarades escaped. This time, though, the army came with the settlers, and they chased our camarades down the valley. Alhamdoulilah they managed to escape and eventually settlers and army retreated.</div>
+        </article>
+
+        <article class="entry">
+          <div class="meta">
+            <div><span class="who">Bis</span> · 13:02</div>
+            <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+          </div>
+          <div class="text">Army and police going at Abu Hammam's</div>
+          <figure>
+            <video controls preload="metadata">
+              <source src="media/v15_1.mp4" type="video/mp4">
+            </video>
+          </figure>
+        </article>
+
+        <article class="entry">
+          <div class="meta">
+            <div><span class="who">Bis</span> · 13:03</div>
+            <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+          </div>
+          <div class="text">Military raiding Abu Hammam’s</div>
+          <figure>
+            <video controls preload="metadata">
+              <source src="media/v15_2.mp4" type="video/mp4">
+            </video>
+          </figure>
+        </article>
+
+        <article class="entry">
+          <div class="meta">
+            <div><span class="who">Bis</span> · 13:04</div>
+            <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+          </div>
+          <div class="text">Gunned settlers chasing our friends down the valley.</div>
+          <figure>
+            <video controls preload="metadata">
+              <source src="media/v15_3.mp4" type="video/mp4">
+            </video>
+          </figure>
+        </article>
+        
+        <div class="day">Day 16 - 22/12/2025</div>
+
+        <article class="entry">
+          <div class="meta">
+            <div><span class="who">Bis</span> · 3:19</div>
+            <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+          </div>
+          <div class="text">https://www.nytimes.com/interactive/2025/12/20/world/middleeast/west-bank-settlements.html?unlocked_article_code=1.-U8.8i4h.NmpQjkrpbkBn&smid=url-share&login=email&auth=login-email
+            
+            "You attack with the wolf and you cry with the sheep"
+            
+            This New York Times article opens and closes with Abu Hammam's (Abu Naïm is another way to call him)
+            </div>
+        </article>
+
+        <article class="entry">
+          <div class="meta">
+            <div><span class="who">Bis</span> · 6:03</div>
+            <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+          </div>
+          <div class="text">No news</div>
+          <figure>
+            <img src="media/16_1.jpeg" loading="lazy">
+          </figure>
+        </article>
+
+        <article class="entry">
+          <div class="meta">
+            <div><span class="who">Bis</span> · 14:43</div>
+            <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+          </div>
+          <div class="text">Leaving Abu Najjeh's tonight to go back to Abu Hammam's. I don't think I'll come back, as I have only few days left in Palestine. I will miss this family and these kids. I wish the best for them and I hope to be able to come back and visit them soon, on better days, when Palestine is free 🇵🇸❤️
+          </div>
+          <div class="gallery">
+            <img src="media/16_2.jpeg" loading="lazy">
+            <img src="media/16_3.jpeg" loading="lazy">
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="meta">
+            <div><span class="who">Bis</span> · 18:09</div>
+            <div>Abu Najjeh - Al-Mughayyr - Close to Ramallah</div>
+          </div>
+          <div class="text"></div>
+        </article>
+        
+          
+          <div class="day">Day 17 - 23/12/2025</div>
+
+          <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 12:35</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">Day 16? Not sure</div>
+          </article>
+
+          <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 12:35</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">Back to AH</div>
+            <figure>
+              <img src="media/17_1.jpeg" loading="lazy">
+            </figure>
+          </article>
+
+          <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 12:53</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">They tell me it’s day 17
+            </div>
+          </article>
+
+          <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 19:03</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">
+              (19:03) No bad news for today yet. We arrived at AH to find the house full of people and kids, a huge lunch was served, and we played football and volleyball.
+              This is how life is supposed to be, and they are determined to live it no matter what.
+              Fuck the occupation 🇵🇸</div>
+          </article>
+
+          <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 19:04</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">I worked on an article about last couple of days events that we'll see if we'll publish.
+              
+            Big cooking ongoing again.
+              </div>
+              <figure>
+                <img src="media/17_2.jpeg" loading="lazy">
+              </figure>
+          </article>
+          
+          
+          <div class="day">Day 18 - 24/12/2025</div>
+
+          <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 9:18</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">Calm night but joggy morning
+
+              Army came but did not find us
+              </div>
+          </article>
+
+          <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 14:32</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">For the Arab speakers, interview to Fatima
+
+              ابنة قرية المغير… صوت الحق في وجه الاعتداء
+              
+              المواطنة فاطمة أبو نعيم من قرية المغير، والتي عُرفت بشجاعتها وتصديها المتكرر لقطعان المستوطنين، 
+              تروي تفاصيل أحد الاعتداءات التي تعرّض لها الأهالي في منطقة الخلايل – جنوب قرية المغير.
+              
+              فاطمة تشرح كيف نُفّذ الاعتداء، وتكشف طريقة تعامل جيش وشرطة الاحتلال، وما رافقه من تواطؤ واضح مع المستوطنين، عبر الحماية المباشرة لهم والتغاضي عن اعتداءاتهم بحق الأرض وأصحابها.
+              
+              شهادة حية من الميدان تؤكد أن المستوطن يعتدي،
+              والجيش يحمي،
+              والأهالي وحدهم يواجهون…
+              لكنهم ثابتون، ولن يتركوا أرضهم مهما اشتد القمع
+              </div>
+          </article>
+
+          <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 20:24 - 20:50</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">Bad night ahead
+
+              1 hour ago 50 settlers tried to attack the Abu Najjeh family (where I was staying until 2 days ago)
+              
+              In yet another example of cooperation between army and settlers gangs, the army closed the entrance to the Al Mughayyr village trying to prevent inhabitants to help
+              
+              Still Shebab surrounded the settlers and had them retreat
+              
+              There are no injuries, some gunshots were heard
+              
+              During the attack I stayed at AH with two other internationals and two Palestinian men, while the women and kids of the family escaped in the hills
+              
+              I bought many flashlights and we shone them all together to make it look like many people were still around
+              
+              It's a tactic famously used by the Mongol army and never trust them when they tell you history podcasts are a waste of time
+              
+              Now we are again six internationals and three Palestinians here so we feel slightly less vulnerable
+              
+              Scenes from the attack</div>
+              <div class="gallery">
+                <video controls preload="metadata">
+                  <source src="media/v18_1.mp4" type="video/mp4">
+                </video>
+                <video controls preload="metadata">
+                  <source src="media/v18_2.mp4" type="video/mp4">
+                </video>
+              </div>
+          </article>
+
+          <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 21:37</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">Good night and merry Christmas
+            </div>
+          </article>
+          
+          <div class="day">Day 19 - 25/12/2025</div>
+
+          <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 6:28</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">All good.
+            </div>
+            
+            <div class="gallery">
+              <img src="media/19_1.jpeg" loading="lazy">
+              <img src="media/19_2.jpeg" loading="lazy">
+            </div>
+          </article>
+
+          <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 9:18</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">Zionists demolishing the village children park this morning
+
+              عمليات تدمير ممنهج لحديقة المغير</div>
+            <div class="gallery">
+              <img src="media/19_3.jpeg" loading="lazy">
+              <video controls preload="metadata">
+                <source src="media/v19_1.mp4" type="video/mp4">
+              </video>
+            </div>
+          </article>
+
+          <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 16:17</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">
+              Settlers back at Abu Najjeh, they cut the fences and they are grazing their sheep with the family's olives</div>
+              <figure>
+                <video controls preload="metadata">
+                  <source src="media/v19_2.mp4" type="video/mp4">
+                </video>
+              </div>
+          </article>
+
+          <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 16:18</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">
+              A settler just ran over a young man while he was praying in the village of Deir Jarir near Al-Mughayyir.</div>
+              <figure>
+                <video controls preload="metadata">
+                  <source src="media/v19_3.mp4" type="video/mp4">
+                </video>
+              </div>
+          </article>
+          
+          <div class="day">Day 20 - 26/12/2025</div>
+
+          <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 10:27</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">Ancora a piede libero</div>
+            <figure>
+              <img src="media/20_2.jpeg" loading="lazy">
+            </figure>
+          </article>
+
+          <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 14:37</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">Silvy and Dragon did not commit to non violence
+
+              And they won't let the unsupervised kids disrupt our lunch</div>
+              <div class="gallery">
+                <img src="media/20_1.jpeg" loading="lazy">
+                <video controls preload="metadata">
+                  <source src="media/v20_1.mp4" type="video/mp4">
+                </video>
+                
+              </div>
+          </article>
+
+          <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 14:41</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">Gio, one of the two international ISM coordinators (i.e., our boss), has to leave Palestine for few weeks for an emergency. Here the tribute of the local youth to her dedication
+            </div>
+            <figure>
+              <img src="media/20_3.jpeg" loading="lazy">
+            </figure>
+          </article>
+
+          <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 15:09</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">Solidarity can also look like dancing in the face of this all</div>
+          </article>
+
+          <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 17:14</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">A pile of trash left 500 meters from us by the settlers 🤷‍♂️
+            </div>
+            <figure>
+              <img src="media/20_4.jpeg" loading="lazy">
+            </figure>
+          </article>
+
+          <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 19:47</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">Zionist army raiding Al Mughayyr
+
+              They converted a house into a military barrack
+              
+              And raised the occupation flag
+              </div>
+              <div class="gallery">
+                <img src="media/20_5.jpeg" loading="lazy">
+                <img src="media/20_6.jpeg" loading="lazy">
+              </div>
+          </article>
+
+          <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 20:30</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">https://youtube.com/watch?v=p6RgK-pVPI8&si=tm7PToexFL6piiYp
+            </div>
+          </article>
+          
+          
+          <div class="day">Day 21 - 27/12/2025</div>
+
+          <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 8:32</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">Night was tough on the village but not on us, only a couple of annoying visits by drones.
+            </div>
+            <div class="gallery">
+              <img src="media/21_1.jpeg" loading="lazy">
+              <img src="media/21_2.jpeg" loading="lazy">
+            </div>
+          </article>
+
+          <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 15:07</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">Some rainbows over the valley.</div>
+            <div class="gallery">
+              <img src="media/21_3.jpeg" loading="lazy">
+              <img src="media/21_4.jpeg" loading="lazy">
+            </div>
+          </article>
+
+          <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 15:14</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">Notwithstanding the rain, settlers harass the Abu Najjeh family by grazing their sheep on their land.</div>
+            <div class="gallery">
+              <img src="media/21_5.jpeg" loading="lazy">
+              <video controls preload="metadata">
+                <source src="media/v21_1.mp4" type="video/mp4">
+              </video>
+            </div>
+          </article>
+
+          <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 15:31</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">Being annoying here as well</div>
+            <figure>
+              <video controls preload="metadata">
+                <source src="media/v21_2.mp4" type="video/mp4">
+              </video>
+            </figure>
+          </article>
+
+          <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 15:33</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <figure>
+              <video controls preload="metadata">
+                <source src="media/v21_3.mp4" type="video/mp4">
+              </video>
+            </figure>
+          </article>
+
+          <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 15:38</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">Have a nice rest now Orsito, and be well awake at night 🐺</div>
+            <figure>
+              <img src="media/21_6.jpeg" loading="lazy">
+            </figure>
+          </article>
+          
+          <div class="day">Day 22 - 28/12/2025</div>
+
+          <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 10:48</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">Second to last day
+
+              Melancholy kicking in.
+              </div>
+            <figure>
+              <img src="media/22_1.jpeg" loading="lazy">
+            </figure>
+            </article>
+            
+            
+            <div class="day">Day 23 - 29/12/2025</div>
+
+            <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 11:16</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text">Yalla</div>
+            <figure>
+              <img src="media/23_1.jpeg" loading="lazy">
+            </figure>
+            </article>
+
+            <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 12:31</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+            <div class="text"> They look like zionist soldiers to me</div>
+            <figure>
+              <img src="media/23_2.jpeg" loading="lazy">
+            </figure>
+            </article>
+
+            
+
+            <article class="entry">
+            <div class="meta">
+              <div><span class="who">Bis</span> · 15:53</div>
+              <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+            </div>
+              <figure>
+                <video controls preload="metadata">
+                  <source src="media/v23_1.mp4" type="video/mp4">
+                </video>
+              </figure>
+            </article>
+            
+            <div class="day">Day 24 - 30/12/2025</div>
+
+            <article class="entry">
+              <div class="meta">
+                <div><span class="who">Bis</span> · 2:34</div>
+                <div>Abu Hammam - Al-Mughayyr - Close to Ramallah</div>
+              </div>
+              <div class="text"> Last night shift, writing the see you soon message
+              </div>
+              <figure>
+                <img src="media/24_1.jpeg" loading="lazy">
+              </figure>
+            </article>
+
+            <article class="entry">
+              <div class="meta">
+                <div><span class="who">Galta</span> · 8:57</div>
+                <div>Italy</div>
+              </div>
+              <div class="text">Hi everyone; when it looked like Bis' days in west bank were about to finish without incidents, he got detained and likely arrested by the occupation forces, apparently together with other two people
+                
+                I don't have much info yet, but he managed to send a message while he was getting arrested: this makes me think that aside from being arrested he's unharmed. I'll keep ypu posted
+              </div>
+            </article>
+            
+            <article class="entry">
+              <div class="meta">
+                <div><span class="who">Galta</span> · 11:33</div>
+                <div>Italy</div>
+              </div>
+              <div class="text">I was told that Bis was not hurt prior nor while being arrested.
+              </div>
+            </article>
+            
+            <article class="entry">
+              <div class="meta">
+                <div><span class="who">Galta</span> · 14:28</div>
+                <div>Italy</div>
+              </div>
+              <div class="text">After 9 hours of disappearing (but it turns out the italian embassy was aware of the arrest) Bis has been released.</div>
+            </article>
+            
+            <article class="entry">
+              <div class="meta">
+                <div><span class="who">Galta</span> · 14:28</div>
+                <div>Italy</div>
+              </div>
+              <div class="text">I don't have extra details except that he is fine.</div>
+            </article>
+            
+            <article class="entry">
+              <div class="meta">
+                <div><span class="who">Galta</span> · 16:39</div>
+                <div>Italy</div>
+              </div>
+              <div class="text">His mobile was lost during the flee, but it's confirmed he's not harmed and updates will come after some rest. Thanks for the support!</div>
+            </article>
+            
+            <div class="day">Day 25 - 31/12/2025</div>
+
+            <article class="entry">
+              <div class="meta">
+                <div><span class="who">Bis</span> · 16:24</div>
+                <div>Amman</div>
+              </div>
+              <div class="text">In Jordan now</div>
+              <figure>
+                <img src="media/25_1.jpeg" loading="lazy">
+              </figure>
+            </article>
+
+            <article class="entry">
+              <div class="meta">
+                <div><span class="who">Bis</span> · 16:26</div>
+                <div>Amman</div>
+              </div>
+              <div class="text">There are a lot of things to say about day 24 so the account will be delayed. I am safe and in perfect shape. All the ISM coordination was very much impressed by the response of my support team back in Europe (i.e. you guys) so a big thanks to everyone involved
+
+                For now I can confirm the striking similarity between Zionist soldiers and 🐷🐗</div>
+            </article>
+            
+            <article class="entry">
+              <div class="meta">
+                <div><span class="who">Bis</span> · 20:57</div>
+                <div>Amman</div>
+              </div>
+              <div class="text">I guess I call it a day for 2025.
+
+                Happy new year everyone 🇵🇸
+              </div>
+            </article>
+            
+            <div class="day">Day 26 - 1/1/2026</div>
+
+            <article class="entry">
+              <div class="meta">
+                <div><span class="who">Bis</span> · 12:28</div>
+                <div>Amman</div>
+              </div>
+              <div class="text">Yalla</div>
+              <figure>
+                <img src="media/26_1.jpeg" loading="lazy">
+              </figure>
+            </article>
+            
+            <div class="day">Day 24 - Two days later.</div>
+
+            <article class="entry">
+              <div class="meta">
+                <div><span class="who">Bis</span> · 19:04</div>
+                <div>Italy</div>
+              </div>
+              <div class="text">It's my last night with this family, so I don't feel like sleeping. 
+
+                I am assigned the third shift, but I stay up chatting with E. through the first shift (23:00 - 00:45) as well. My shift (2:00 - 4:15) is uneventful, and I spend it processing the past three weeks and writing my farewell messages, then I go to sleep.
+                
+                N. rushes into the tent at 5:00 screaming "Jaesh!" (it means the army). We all sleep with our shoes on since three weeks because we know that if we hear that word we must run as fast as possible down the ankle-killer valley, with no lights on to avoid been seen by the military.
+                
+                There is some misunderstanding of the communications from the team at AN and from the Shebab, so it seems the army is going away and we can go back to the tents. But as soon as we are back, they tell us that the army is coming at us: we lost some time, and we run away again.
+                
+                This escape has become almost routine, and in the past instances no one chased us, but we soon realize this time is different: flashlights are scanning the valley and getting closer, then we hear a drone. They are coming and we have to hurry up.
+                
+                We move as fast as possible until we reach the olive groves, where we feel more covered. We are told by Shebab to stay put until the situation clarifies, but the drone is still around, and we know that the military ones have night vision, so we have small hopes to be actually hidden. Also, in the valley we feel stuck in this case where we are actually being chased.
+                
+                We decide to split up to try to gather info from more view points. Max goes with Niko, I stay with E. (a UK girl my age) and N. (an Irish guy aged 58).
+                
+                We have multiple options: staying where we are, going back to AH, climbing towards the sheep shed, going towards the village. I don't like the idea of going to the village. I suspect that the army knows where we are because of the drone, and the village hosts good roads for military jeeps. Also, I don't want to imagine the troubles Palestinians hiding us in their house would face in case we are caught.
+                
+                Hence, we start climbing towards the sheep shed, which means that we leave the cover of the olives and we venture into the very exposed hill slope. 
+                
+                What we do not know is that we are being chased by at least 15 soldiers approaching from three directions (including from the sheep shed), so our plan is doomed to fail.
+                
+                A car slowly descends the road on the other side of the hill. I suggest to: "Move, move!"; but N. is of different advice.
+                
+                The car stops right in front of us and someone gets off.
+                
+                N. says: "I am afraid that if we try to run away.."
+                
+                The soldiers from the car shoot a flare in the air that lights up all the valley, leaving us completely visible. We see the lasers of their rifles. We start moving and one soldier shouts: "Stop now before we shoot!".
+                
+                N. says: "... That will happen". We stop. We try to clean our phones as fast as possible before they reach us (deleting signal, pictures, contacts and anything that might link us to activism, then switching off the phones completely). Soon they are on us from the side of the sheep shed, and they order to keep our hands up in the air. They ask where are Max and Niko, to which we do not reply (in any case, we have no idea by now). They claim they will find them soon (they won't).
+                
+                They zip tie us one by one, me and N. with the hands behind our backs (very uncomfortable) and E. with the hands in front of her (a bit better).
+                
+                So zip tied, they intimate us to walk uphill on the steep slope. It's approximately 6AM. 
+                
+                We are keeping 9 soldiers occupied, and we want to maximize Max and Niko's chances of escaping, so we try to lose their time. E. stops claiming she has asthma. I pretend to slip and fall.
+                
+                We keep climbing in the direction of the sheep shed. The sun is rising and it's a beautiful dawn. We can see the lights of Amman in the distance, and we all try to let this sight sink in as much as we can, convinced this will be our last time watching Palestine - surely the Zionists will deny our right of entering again.
+                
+                I think about the fact that I have been arrested in my second to last hour on the ground. On one side, it feels like the best possible moment to be arrested: I spent all the time I could in solidarity with the family, now I'll support them through media attention brought about by my arrest. On the other side, I am frustrated of knowing I had almost made it out of Palestine with no consequences.
+                
+                Eventually we reach some military jeeps. They tell me to step forward, one soldier removes my glasses and puts them into my pocket, and they blindfold me with a white band.
+                
+                A soldier puts his hand behind my back and starts pushing me. We reach a cellular truck, they make me climb the stairs (always blindfolded - I'll stop clarifying this detail now, as the blindfolding and zip tying lasted the whole time we were kidnapped) and they tell me to sit.
+                
+                We move. On the way, a soldier laughs at me and says: "We are now going to the sheep shed where we will arrest all your friends". This sentence is extremely concerning, as - to my knowledge - the military had never raided the sheep shed, we did not know they knew it was Abu Hammam's, and the fact that he calls it exactly "the sheep shed" makes me think they might have hacked one of our phones or someone among us might have been speaking to them (ISM has been infiltrated by spies multiple times in the past).
+                
+                We stop (I assume at the sheep shed) but no one is there. We drive approximately 10 minutes, then we stop again.
+                
+                They make me get off the car, then climb a big step to get into a room. I hear the voices of a lot of soldiers, then I am told to sit on the ground. Everything stinks of pee. This is one of the moments when I am the most tense, since I think it would be a good moment for a beating if they are planning to beat me at all.
+                
+                To my big relief, few minutes later also E. and N. enter my same room. They ask us for our phones. I say I have one, they ask me where and I say it is in my pocket. They try to find it but it's not there (the day after my friends in Abu Hammam found it, I dropped it inadvertently exactly at the spot where I was arrested).
+                
+                They insist, and E. suggests it maybe dropped (she actually saw me dropping it and believed it was intentional).
+                
+                I am relieved not to have my phone on me. They will have no reason to insist on me unlocking it for them, and by now I realized I had not deleted my farewell messages from the Notes, so I know my phone would be compromising.
+                
+                I don't know how long later, the sun is completely up and we are told we are about to be interrogated. I am called first. 
+                
+                They make me sit, then they remove the blindfold. One soldier is speaking, another is filming me. He asks me name, surname, nationality, to which I reply. Then he asks me for which reason I am in Palestine, and I reply with the usual mantra: "I don't know what I did wrong and I do not understand the law, so I will not talk to anyone without a lawyer". 
+                
+                They blindfold me again and make me sit on my spot, then proceed to ask the same questions to E. (same answers) and to N. (he declares that he is a tourist and then replies with "no comment" to the other questions).
+                
+                In the whiteness of the blindfolding we loose the perception of time, but I am having troubles with my right shoulder, which I injured one year ago and by now is screaming due to the position it's being forced into by the zip tying behind the back + sitting on the ground. When E. asks me how I am feeling and I tell about the pain, the soldier says: "it is more comfortable in Ireland". 
+                
+                I am actually sitting on a pallet, and after some hours I manage to slip my hand through a gap and extend my arm, which greatly reduces the pain.
+                
+                Given the sleepless night and all that happened since morning, I am beyond exhausted, and I briefly fall asleep multiple times
+                
+                One time a soldier asks us: "I am very curious guys. What were you doing there?". E. replies: "Let me turn around the question. Why are we being kept here?". He says he's not an interrogator, so he cannot tell us.
+                
+                I'd like you to pause now and consider our situation from a legal standpoint. We have been detained while walking into a valley we had the absolute right to walk. We are being detained - no one knows where - since hours. The legal duration of a detention is of three hours, after which we should be either released or arrested and brought to a police station. We are blindfolded and zip tied; we are kidnapped and disappeared by the genocidal army of a genocidal state.
+                
+                E. asks her zip ties to be loosened. I can see her wrists from below my blindfold, and the zips are cutting deep into her wrists: mine are way looser. Eventually, they loosen them for her: too tight zip ties wore for too long can provoke permanent injuries.
+                
+                It's the first day of period for Elle, and she has no tampax. There is no woman in this place, and her white pants are completely covered in blood. Soldiers guarding us come and go, one asks her, with a laughter: "do you want to donate blood?"
+                
+                When E. asks to go to the toilet, we are very worried, because she does not come back for a long time. In reality, she is cleaning her blood as much as she can and then teaching the idiot zionist soldier with her how to put on the zip ties properly.
+                
+                While she is away, the soldier with us puts on some music. It's "Bring me to Life" by Evanescence. Suddenly, an idea must cross the half neuron half working inside his brain, and he decides to try to humiliate us in a grotesque way. He puts on "Figaro", the famous Italian opera tune. Then he puts on "Anarchy in the UK". 
+                
+                Few soldiers in the world have enough brain to understand political nuances, and for sure those soldiers do not live in Israel: it is a well known fact that for them whoever leans left is an anarchist.
+                
+                Funny enough, listening to Anarchy in the UK in this situation hypes me up, it's far from humiliating. I think something along the lines of: "Yes, you asshole: I want to be Anarchy!"
+                
+                When N. asks to go to the toilet, the soldiers fuck up in guiding him down the big step and he falls down in pain, with a sprained ankle and maybe a fractured foot. Such an injury, together with Elle's cuts on the wrists, are 100% responsibility of the zionist kidnappers.
+                
+                When I ask to go to the toilet, they push me blindfolded until we reach it. The soldier removes my blindfold, and tells me to proceed. I say I don't know how (my hands are still zip tied behind my back). He tells me to stay put, leaves for a couple of minutes, comes back and cuts my zip ties. My arms are very numb but I can look at my watch, it's 13:40.
+                
+                The first time we asked for drinking, a soldier poured the water in our mouths. The following times, E. was blindfoldedly pouring it for us, having her hands zip tied in front. This second way of drinking felt one milion times better, even if it got me a bit wet.
+                
+                We ask for lunch multiple times, and they keep repeating that it will come soon. In reality, when a soldier comes with food for us, the soldier on watch sends him away.
+                
+                Eventually, they tell us to stand up and board a car to go to the police station. During the car ride, the soldiers try to chat with us. 
+                
+                "Why did you decide to come live in such an horrible place?" (he means Palestine). E. replies: "why are we arrested?". He says: "Because you are illegal in this country ".
+                
+                We reach the police station. Still zip tied and blindfolded, they push us into a room and make us sit on the ground again.
+                
+                Soon after, they push a twelve years old Palestinian kid to the ground, next to me. His head is in an orange sack and he is zip tied. As soon as he feels my body, he immediately clings very tight to me seeking some kind of comfort. From below the blindfold, I can see his small hand on my thigh.
+                
+                We are all petrified, and I prepare myself to witness violence against him and maybe against us at this point.
+                
+                With a kick, a soldier intimates the kid to stand up. I can see his feet. They chain them together and push him away. We have no news of him since.
+                
+                Two policemen than enter the room. They tell us to stand up and the soldiers to remove the zip ties and the blindfold. Then they tell us to sit in the chairs and give us some water.
+                
+                The woman speaks and the man translates. She says we have been taken because we were found in a Closed Military Zone and the military had to intervene to remove us from such a dangerous zone. This is a lie. She says that the military is there to protect both sides. This is a bigger lie. Then she says that since it is the first time, she decided to let us go with a warning, but that if they find us in a CMZ again we will be deported.
+                
+                We are completely stunned by what we hear. We leave the police station. Few minutes later, the soldiers drive in front of us. One soldier shows us the middle finger.
+                
+                Going back to the Ramallah flat from the Beniamin police station takes us 3 hours. We have the chance to see part of Israel, and the soul-less faces of those that live their lives in it.
+                
+                This is what happened to three internationals caught doing nothing while holding three of the most powerful passports in the world. 
+                
+                It is nothing but an edulcorated taste of the zionist entity injustice system.
+                
+                All their prisons must be emptied, and all the soldiers must be held accountable for their crimes.</div>
+            </article>
+            
+
+            <article class="entry">
+              <div class="meta">
+                <div><span class="who">Bis</span> · 19:10</div>
+                <div>Italy</div>
+              </div>
+              <div class="text">I just heard from Max and Niko. They were on the other side of the valley, above the car. They managed to escape by pretending to be rocks when the flares were fired. Absolute legends!</div>
+            </article>
+            
+            <div class="day">Conclusion</div>
+            
+            <article class="entry">
+              <div class="meta">
+                <div><span class="who">Bis</span> · 15:43</div>
+                <div>Italy</div>
+              </div>
+              <figure>
+                <img src="media/conc_1.jpeg" loading="lazy">
+              </figure>
+            </article>
+            
+            <article class="entry">
+              <div class="meta">
+                <div><span class="who">Bis</span> · 15:44</div>
+                <div>Italy</div>
+              </div>
+              <div class="text">I am sitting on the train for Geneva to go back to my usual life.
+
+                The month I am leaving behind feels both like a lifetime and like a short moment spent holding my breath.
+                
+                Not much has changed: I am in Europe, happy and safe; my friends in Palestine are happy and very, very unsafe.
+                
+                From the very beginning, I knew that Palestine would offer me more than I could ever give back.
+                
+                What the Abu Hammam and Abu Najjeh families taught me is the unwavering practice of joy in the face of danger and oppression.
+                
+                Umm Hammam and Abu Hammam way of living showed me an example of dignity that no military or weapon can ever match or break.
+                
+                It's strange to be so aware of the dangers they are still facing, knowing well how the situation in the West Bank  is still escalating daily and how little the rest of the world cares.
+                
+                In this scary, scary world we live in, this type of work can feel hopeless at times. 
+                
+                In those moments, I like to remember that the actions of each one of us are the beating heart of History, and we have the duty to nurture and practice the traditions of international solidarity especially in the hardest times so that they will be strong and thriving when better days come and the tide will turn. If we give up now, so many crucial things risk to be lost.
+                
+                I hope to be invited by my new friends to join Liberation Day, when I dream to set on fire with them all the ugly Zionist flags that oppress the beautiful streets of Palestine. 
+                
+                In that day, all the world shall see how bright is the flame that burns within our hearts.
+                
+                ISM is always searching for people, and in the upcoming weeks the numbers of activists will go down. Do not hesitate to contact me at my old usual number starting tomorrow for any question.
+                
+                This is not a farewell!
+                
+                Free Palestine.
+                
+                Within our lifetime 🇵🇸
+                
+                Bis 🐈
+                </div>
+            </article>
+            
+            <article class="entry">
+              <div class="meta">
+                <div><span class="who">Bis</span> · 15:50</div>
+                <div>Italy</div>
+              </div>
+              <div class="text">Rage Against The Machine
+
+              6 Dec 2025 - 1 Jan 2026</div>
+            </article>
+            
+    <!--End -->
+
+  </main>
+
+  <!-- Lightbox dialog (optional enhancement for images) -->
+  <dialog id="lightbox">
+    <div class="lb">
+      <div class="lb-head">
+        <div class="lb-title" id="lbTitle">Media</div>
+        <button class="close" id="lbClose">Close</button>
+      </div>
+      <div id="lbBody"></div>
+    </div>
+  </dialog>
+
+  <script>
+    // Search filter
+    const q = document.getElementById('q');
+    const clearBtn = document.getElementById('clear');
+    const entries = Array.from(document.querySelectorAll('.entry'));
+    const days = Array.from(document.querySelectorAll('.day'));
+
+    function applyFilter() {
+      const term = q.value.trim().toLowerCase();
+      entries.forEach(e => {
+        const hay = (e.getAttribute('data-text') || '') + ' ' + e.innerText.toLowerCase();
+        e.classList.toggle('hidden', term && !hay.includes(term));
+      });
+
+      // Hide day headers if all following entries until next day are hidden
+      days.forEach((d, idx) => {
+        let anyVisible = false;
+        let n = d.nextElementSibling;
+        while (n && !n.classList.contains('day')) {
+          if (n.classList.contains('entry') && !n.classList.contains('hidden')) anyVisible = true;
+          n = n.nextElementSibling;
+        }
+        d.classList.toggle('hidden', !anyVisible && term.length > 0);
+      });
+    }
+
+    q.addEventListener('input', applyFilter);
+    clearBtn.addEventListener('click', () => { q.value = ''; applyFilter(); q.focus(); });
+
+    // Optional: lightbox for images (videos stay inline)
+    const lightbox = document.getElementById('lightbox');
+    const lbBody = document.getElementById('lbBody');
+    const lbTitle = document.getElementById('lbTitle');
+    const lbClose = document.getElementById('lbClose');
+
+    document.addEventListener('click', (ev) => {
+      const img = ev.target.closest('img');
+      if (!img) return;
+      ev.preventDefault();
+
+      lbTitle.textContent = img.getAttribute('alt') || 'Image';
+      lbBody.innerHTML = '';
+      const big = document.createElement('img');
+      big.src = img.src;
+      big.alt = img.alt || 'Image';
+      big.style.width = '100%';
+      big.style.maxHeight = '85vh';
+      big.style.objectFit = 'contain';
+      lbBody.appendChild(big);
+
+      lightbox.showModal();
+    });
+
+    lbClose.addEventListener('click', () => lightbox.close());
+    lightbox.addEventListener('click', (ev) => {
+      const rect = lightbox.getBoundingClientRect();
+      const inDialog = ev.clientX >= rect.left && ev.clientX <= rect.right && ev.clientY >= rect.top && ev.clientY <= rect.bottom;
+      if (!inDialog) lightbox.close();
+    });
+  </script>
+</body>
+</html>
